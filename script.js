@@ -1,5 +1,5 @@
 
-//document.body.style.zoom = "25%";
+document.body.style.zoom = "25%";
 var i = 0;
 
 function cuadrilatero(ctx, grosor, alto, largo, x, y) {
@@ -128,10 +128,10 @@ function letra(letra, ctx, grosor, x, y) {
             cuadrilatero(ctx, grosor, 7, 1, x, y);
             cuadrilatero(ctx, grosor, 1, 1, x + grosor, y - (3 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (4 * grosor));
-            
+
             cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (5 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (4 * grosor), y - (6 * grosor));
-            
+
             cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (2 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (1 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (4 * grosor), y);
@@ -141,78 +141,78 @@ function letra(letra, ctx, grosor, x, y) {
             break;
         case 'l':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,7,1,x,y);
-            cuadrilatero(ctx,grosor,1,5,x,y);
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 5, x, y);
             ctx.fill()
             console.log(letra);
 
             break;
         case 'm':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,7,1,x,y);
-            cuadrilatero(ctx,grosor,7,1,x+(4*grosor),y);
-            cuadrilatero(ctx,grosor,1,1,x+grosor,y-(5*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(5*grosor));
-            cuadrilatero(ctx,grosor,2,1,x+(2*grosor),y-(3*grosor));
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x + (4 * grosor), y);
+            cuadrilatero(ctx, grosor, 1, 1, x + grosor, y - (5 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (5 * grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (2 * grosor), y - (3 * grosor));
             ctx.fill()
             console.log(letra);
 
             break;
         case 'n':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,7,1,x,y);
-            cuadrilatero(ctx,grosor,7,1,x+(4*grosor),y);
-            cuadrilatero(ctx,grosor,1,1,x+(1*grosor),y-(4*grosor))
-            cuadrilatero(ctx,grosor,1,1,x+(2*grosor),y-(3*grosor))
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(2*grosor))
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x + (4 * grosor), y);
+            cuadrilatero(ctx, grosor, 1, 1, x + (1 * grosor), y - (4 * grosor))
+            cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (3 * grosor))
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (2 * grosor))
             ctx.fill()
             console.log(letra);
 
             break;
         case 'ñ':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,7,1,x,y);
-            cuadrilatero(ctx,grosor,4,1,x+(4*grosor),y);
-            cuadrilatero(ctx,grosor,1,1,x+(1*grosor),y-(4*grosor))
-            cuadrilatero(ctx,grosor,1,1,x+(2*grosor),y-(3*grosor))
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(2*grosor))
-            cuadrilatero(ctx,grosor,2,1,x+(4*grosor),y-(5*grosor))
-            cuadrilatero(ctx,grosor,1,2,x+(2*grosor),y-(6*grosor))
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x, y);
+            cuadrilatero(ctx, grosor, 4, 1, x + (4 * grosor), y);
+            cuadrilatero(ctx, grosor, 1, 1, x + (1 * grosor), y - (4 * grosor))
+            cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (3 * grosor))
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (2 * grosor))
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (5 * grosor))
+            cuadrilatero(ctx, grosor, 1, 2, x + (2 * grosor), y - (6 * grosor))
             ctx.fill()
             console.log(letra);
 
             break;
         case 'o':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,5,1,x,y-(1*grosor))
-            cuadrilatero(ctx,grosor,5,1,x+(4*grosor),y-(1*grosor))
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(6*grosor))
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(0*grosor))
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 5, 1, x, y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 5, 1, x + (4 * grosor), y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (0 * grosor))
             ctx.fill()
             console.log(letra);
 
             break;
         case 'p':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,7,1,x,y);
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(6*grosor))
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(3*grosor))
-            cuadrilatero(ctx,grosor,2,1,x+(4*grosor),y-(4*grosor))
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (3 * grosor))
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (4 * grosor))
             ctx.fill()
             console.log(letra);
 
             break;
         case 'q':
-            cuadrilatero(ctx,grosor,5,1,x,y-(1*grosor))
-            cuadrilatero(ctx,grosor,4,1,x+(4*grosor),y-(2*grosor))
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(6*grosor))
-            cuadrilatero(ctx,grosor,1,2,x+(1*grosor),y-(0*grosor))
+            cuadrilatero(ctx, grosor, 5, 1, x, y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 4, 1, x + (4 * grosor), y - (2 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor))
+            cuadrilatero(ctx, grosor, 1, 2, x + (1 * grosor), y - (0 * grosor))
             cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (2 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (1 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (4 * grosor), y);
@@ -222,115 +222,115 @@ function letra(letra, ctx, grosor, x, y) {
             break;
         case 'r':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,7,1,x,y);
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(6*grosor))
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(3*grosor))
-            cuadrilatero(ctx,grosor,2,1,x+(4*grosor),y-(4*grosor))
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 7, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (6 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (3 * grosor))
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (4 * grosor))
             cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (2 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (1 * grosor));
             cuadrilatero(ctx, grosor, 1, 1, x + (4 * grosor), y);
-            
+
             ctx.fill()
             console.log(letra);
 
             break;
         case 's':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,1,4,x+(1*grosor),y-(6*grosor))
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(3*grosor))
-            cuadrilatero(ctx,grosor,1,4,x+(0*grosor),y-(0*grosor))
-            cuadrilatero(ctx,grosor,2,1,x+(0*grosor),y-(4*grosor))
-            cuadrilatero(ctx,grosor,2,1,x+(4*grosor),y-(1*grosor))
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 4, x + (1 * grosor), y - (6 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (3 * grosor))
+            cuadrilatero(ctx, grosor, 1, 4, x + (0 * grosor), y - (0 * grosor))
+            cuadrilatero(ctx, grosor, 2, 1, x + (0 * grosor), y - (4 * grosor))
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (1 * grosor))
             ctx.fill()
             console.log(letra);
 
             break;
         case 't':
             ctx.beginPath();
-            ctx.moveTo(x,y);
+            ctx.moveTo(x, y);
             cuadrilatero(ctx, grosor, 7, 1, x + (2 * grosor), y);
-            cuadrilatero(ctx, grosor, 1, 5, x + (0*grosor), y - (6 * grosor));
-            
+            cuadrilatero(ctx, grosor, 1, 5, x + (0 * grosor), y - (6 * grosor));
+
             ctx.fill()
             console.log(letra);
 
             break;
         case 'u':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,6,1,x,y-(1*grosor))
-            cuadrilatero(ctx,grosor,6,1,x+(4*grosor),y-(1*grosor))
-            cuadrilatero(ctx,grosor,1,3,x+(1*grosor),y-(0*grosor))
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 6, 1, x, y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 6, 1, x + (4 * grosor), y - (1 * grosor))
+            cuadrilatero(ctx, grosor, 1, 3, x + (1 * grosor), y - (0 * grosor))
             ctx.fill()
             console.log(letra);
 
             break;
         case 'v':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,4,1,x,y-(3*grosor));
-            cuadrilatero(ctx,grosor,4,1,x+(4*grosor),y-(3*grosor));
-            y+=3*grosor;
-            cuadrilatero(ctx,grosor,2,1,x+grosor,y-(4*grosor));
-            cuadrilatero(ctx,grosor,2,1,x+(3*grosor),y-(4*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(2*grosor),y-(3*grosor));
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 4, 1, x, y - (3 * grosor));
+            cuadrilatero(ctx, grosor, 4, 1, x + (4 * grosor), y - (3 * grosor));
+            y += 3 * grosor;
+            cuadrilatero(ctx, grosor, 2, 1, x + grosor, y - (4 * grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (3 * grosor), y - (4 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (3 * grosor));
             ctx.fill()
             console.log(letra);
 
             break;
         case 'w':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            
-            cuadrilatero(ctx,grosor,6,1,x+(0*grosor),y-(1*grosor));
-            cuadrilatero(ctx,grosor,3,1,x+(2*grosor),y-(1*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(1*grosor),y-(0*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(0*grosor));
-            cuadrilatero(ctx,grosor,6,1,x+(4*grosor),y-(1*grosor));
+            ctx.moveTo(x, y);
+
+            cuadrilatero(ctx, grosor, 6, 1, x + (0 * grosor), y - (1 * grosor));
+            cuadrilatero(ctx, grosor, 3, 1, x + (2 * grosor), y - (1 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (1 * grosor), y - (0 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (0 * grosor));
+            cuadrilatero(ctx, grosor, 6, 1, x + (4 * grosor), y - (1 * grosor));
             ctx.fill()
             console.log(letra);
 
             break;
         case 'x':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,2,1,x+(0*grosor),y-(5*grosor));
-            cuadrilatero(ctx,grosor,2,1,x+(0*grosor),y-(0*grosor));
-            cuadrilatero(ctx,grosor,2,1,x+(4*grosor),y-(5*grosor));
-            cuadrilatero(ctx,grosor,2,1,x+(4*grosor),y-(0*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(1*grosor),y-(2*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(2*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(1*grosor),y-(4*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(4*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(2*grosor),y-(3*grosor));
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 2, 1, x + (0 * grosor), y - (5 * grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (0 * grosor), y - (0 * grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (5 * grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (0 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (1 * grosor), y - (2 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (2 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (1 * grosor), y - (4 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (4 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (3 * grosor));
             ctx.fill()
             console.log(letra);
 
             break;
         case 'y':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,2,1,x+(0*grosor),y-(5*grosor));
-            cuadrilatero(ctx,grosor,2,1,x+(4*grosor),y-(5*grosor));
-            cuadrilatero(ctx,grosor,4,1,x+(2*grosor),y-(0*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(1*grosor),y-(4*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(4*grosor));
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 2, 1, x + (0 * grosor), y - (5 * grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x + (4 * grosor), y - (5 * grosor));
+            cuadrilatero(ctx, grosor, 4, 1, x + (2 * grosor), y - (0 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (1 * grosor), y - (4 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (4 * grosor));
             ctx.fill()
             console.log(letra);
 
             break;
         case 'z':
             ctx.beginPath();
-            ctx.moveTo(x,y);
-            cuadrilatero(ctx,grosor,1,5,x+(0*grosor),y-(6*grosor));
-            cuadrilatero(ctx,grosor,1,5,x+(0*grosor),y-(0*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(0*grosor),y-(1*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(1*grosor),y-(2*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(2*grosor),y-(3*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(3*grosor),y-(4*grosor));
-            cuadrilatero(ctx,grosor,1,1,x+(4*grosor),y-(5*grosor));
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 5, x + (0 * grosor), y - (6 * grosor));
+            cuadrilatero(ctx, grosor, 1, 5, x + (0 * grosor), y - (0 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (0 * grosor), y - (1 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (1 * grosor), y - (2 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (3 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (4 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (4 * grosor), y - (5 * grosor));
             ctx.fill()
             console.log(letra);
 
@@ -358,8 +358,14 @@ function dibujarecur() {
     const ctx = canvas.getContext('2d');
     const canvas2 = document.getElementById('miCanvas2');
     const ctx2 = canvas2.getContext('2d');
-    
-    
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    ctx2.beginPath();
+    ctx2.moveTo(0, 0);
+    ctx2.lineTo(1500, 0);
+    ctx2.lineTo(1500, 2500);
+    ctx2.lineTo(0, 2500);
+    ctx2.fill();
+
     if (i >= 1) {
         ctx.fillStyle = "#ff7e00"; //color del zorro
         ctx.beginPath();
@@ -721,7 +727,7 @@ function dibujarecur() {
         ctx.fill();
     }
     if (i >= 32) {
-        
+
 
         x = 1100;
         y = 600;
@@ -734,29 +740,29 @@ function dibujarecur() {
         ctx.lineTo(x + largo, y)
         ctx.fill();
     }
-    y=200;
-    if(i>=33) write("F", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(5*10*6))/2), y);
-    if(i>=34) write("Fe", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(5*10*6))/2), y);
-    if(i>=35) write("Fel", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(5*10*6))/2), y);
-    if(i>=36) write("Feli", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(5*10*6))/2), y);
-    if(i>=37) write("Feliz", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(5*10*6))/2), y);
-    if(i>=38) write("c", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=39) write("cu", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=40) write("cum", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=41) write("cump", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=42) write("cumpl", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=43) write("cumple", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=44) write("cumplea", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=45) write("cumpleañ", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=46) write("cumpleaño", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=47) write("cumpleaños", ctx2, 10, ((1500-(10*10*6))/2), y+100);
-    if(i>=48) write("H", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=49) write("He", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=50) write("Her", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=51) write("Herm", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=52) write("Herma", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=53) write("Herman", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=54) write("Hermani", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=55) write("Hermanit", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    if(i>=56) write("Hermanita", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
+    y = 200;
+    if (i >= 33) write("F", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    if (i >= 34) write("Fe", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    if (i >= 35) write("Fel", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    if (i >= 36) write("Feli", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    if (i >= 37) write("Feliz", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    if (i >= 38) write("c", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 39) write("cu", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 40) write("cum", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 41) write("cump", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 42) write("cumpl", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 43) write("cumple", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 44) write("cumplea", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 45) write("cumpleañ", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 46) write("cumpleaño", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 47) write("cumpleaños", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    if (i >= 48) write("H", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 49) write("He", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 50) write("Her", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 51) write("Herm", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 52) write("Herma", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 53) write("Herman", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 54) write("Hermani", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 55) write("Hermanit", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 56) write("Hermanita", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
 }
