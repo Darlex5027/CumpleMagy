@@ -741,6 +741,7 @@ function dibujarecur() {
         ctx.fill();
     }
     y = 200;
+    ctx2.fillStyle = "black"; //color del zorro
     if (i >= 33) write("F", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
     if (i >= 34) write("Fe", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
     if (i >= 35) write("Fel", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
