@@ -1,5 +1,5 @@
 
-document.body.style.zoom = "25%";
+//document.body.style.zoom = "25%";
 var i = 0;
 
 function cuadrilatero(ctx, grosor, alto, largo, x, y) {
@@ -759,9 +759,4 @@ function dibujarecur() {
     if(i>=54) write("Hermani", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
     if(i>=55) write("Hermanit", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
     if(i>=56) write("Hermanita", ctx2, 10, ((1500-(10*10*6))/2)+(((10*10*6)-(9*10*6))/2), y+200);
-    
-    
-
-    
-    
 }
