@@ -1,5 +1,5 @@
 
-//document.body.style.zoom = "25%";
+document.body.style.zoom = "25%";
 var i = 0;
 
 function cuadrilatero(ctx, grosor, alto, largo, x, y) {
