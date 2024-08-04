@@ -9,8 +9,16 @@ function cuadrilatero(ctx, grosor, alto, largo, x, y) {
     ctx.lineTo(x + (largo * grosor), y);
 
 }
+
 function letra(letra, ctx, grosor, x, y) {
     switch (letra) {
+        case '_':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 6, x, y);
+            ctx.fill();
+            console.log(letra);
+            break;
         case 'a':
             ctx.beginPath();
             ctx.moveTo(x, y);
@@ -742,28 +750,110 @@ function dibujarecur() {
     }
     y = 200;
     ctx2.fillStyle = "black"; //color del zorro
-    if (i >= 33) write("F", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
-    if (i >= 34) write("Fe", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
-    if (i >= 35) write("Fel", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
-    if (i >= 36) write("Feli", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
-    if (i >= 37) write("Feliz", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
-    if (i >= 38) write("c", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 39) write("cu", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 40) write("cum", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 41) write("cump", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 42) write("cumpl", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 43) write("cumple", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 44) write("cumplea", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 45) write("cumpleañ", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 46) write("cumpleaño", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 47) write("cumpleaños", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
-    if (i >= 48) write("H", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 49) write("He", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 50) write("Her", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 51) write("Herm", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 52) write("Herma", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 53) write("Herman", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 54) write("Hermani", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 55) write("Hermanit", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
-    if (i >= 56) write("Hermanita", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i >= 33) write("F_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 34) write("F_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 35) write("Fe_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 36) write("Fe_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 37) write("Fel_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 38) write("Fel_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 39) write("Feli_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 40) write("Feli_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 41) write("Feliz_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 42) write("Feliz_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 41) write("Feliz", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (5 * 10 * 6)) / 2), y);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 43) write("c_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 44) write("c_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 45) write("cu_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 46) write("cu_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 47) write("cum_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 48) write("cum_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 49) write("cump_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 50) write("cump_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 51) write("cumpl_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 52) write("cumpl_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 53) write("cumple_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 54) write("cumple_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 55) write("cumplea_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 56) write("cumplea_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 57) write("cumpleañ_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 58) write("cumpleañ_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 59) write("cumpleaño_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 60) write("cumpleaño_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 61) write("cumpleaños_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 62) write("cumpleaños_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 61) write("cumpleaños", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2), y + 100);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 63) write("H_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 64) write("H_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 65) write("He_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 66) write("He_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 67) write("Her_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 68) write("Her_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 69) write("Herm_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 70) write("Herm_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 71) write("Herma_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 72) write("Herma_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 73) write("Herman_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 74) write("Herman_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 75) write("Hermani_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 76) write("Hermani_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 77) write("Hermanit_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "#ff7e00"; //color del zorro
+    if (i >= 78) write("Hermanit_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    ctx2.fillStyle = "black"; //color del zorro
+    if (i >= 79) write("Hermanita_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+
+    if (i >= 80 && i % 2 == 0) {
+        ctx2.fillStyle = "#ff7e00"; //color del zorro
+        write("         _", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    }
+    if (i >= 80 && i % 2 != 0) {
+        ctx2.fillStyle = "black"; //color del zorro
+        write("         _", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    }
 }
