@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi primer página web</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="dibujar()">
+    <center><canvas id="miCanvas" width="1500" height="1300"></canvas></center>
+    
+    <script>
+        function dibujar(){
+            setInterval("dibujarecur()",1000/8);
+        }
+    </script>
+</body>
+
+</html>
