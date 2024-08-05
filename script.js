@@ -1,4 +1,4 @@
-document.body.style.zoom = "25%";
+document.body.style.zoom = "100%";
 var i = -1;
 
 
