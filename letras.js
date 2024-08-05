@@ -8,6 +8,21 @@ function cuadrilatero(ctx, grosor, alto, largo, x, y) {
 
 function letra(letra, ctx, grosor, x, y) {
     switch (letra) {
+        case ',':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x, y);
+            cuadrilatero(ctx, grosor, 1, 2, x - (1 * grosor), y + (1 * grosor));
+            ctx.fill();
+            console.log(letra);
+            break;
+        case '.':
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 1, 1, x, y);
+            ctx.fill();
+            console.log(letra);
+            break;
         case '_':
             ctx.beginPath();
             ctx.moveTo(x, y);
