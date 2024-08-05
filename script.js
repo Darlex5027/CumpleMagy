@@ -1,4 +1,4 @@
-document.body.style.zoom = "100%";
+document.body.style.zoom = "25%";
 var i = -1;
 
 
@@ -491,15 +491,15 @@ function dibujarecur() {
     ctx2.fillStyle = "#ff7e00"; //color del zorro
     if (i == 80) write("Hermanit_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
     ctx2.fillStyle = "black"; //color del zorro
-    if (i == 81) write("Hermanita_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+    if (i == 81) write("Hermanita<3_", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
 
     if (i >= 82 && i % 2 == 0) {
         ctx2.fillStyle = "#ff7e00"; //color del zorro
-        write("         _", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+        write("           _", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
     }
     if (i >= 82 && i % 2 != 0) {
         ctx2.fillStyle = "black"; //color del zorro
-        write("         _", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
+        write("           _", ctx2, 10, ((1500 - (10 * 10 * 6)) / 2) + (((10 * 10 * 6) - (9 * 10 * 6)) / 2), y + 200);
     }
     if (i == 83) {
         ctx2.fillStyle = "black";

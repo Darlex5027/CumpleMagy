@@ -8,6 +8,32 @@ function cuadrilatero(ctx, grosor, alto, largo, x, y) {
 
 function letra(letra, ctx, grosor, x, y) {
     switch (letra) {
+        case '3':
+            ctx.beginPath();
+            x-= (3*grosor)
+            ctx.moveTo(x, y);
+            cuadrilatero(ctx, grosor, 2, 1, x+(4*grosor), y-(.5*grosor));
+            cuadrilatero(ctx, grosor, 2, 1, x+(4*grosor), y-(4*grosor));
+            cuadrilatero(ctx, grosor, .5, 3, x + (1 * grosor), y - (6 * grosor));
+            cuadrilatero(ctx, grosor, .5, 3, x + (1 * grosor), y);
+            cuadrilatero(ctx, grosor, 1, 3, x+(1 * grosor), y - (3 * grosor));
+            ctx.fill();
+            console.log(letra);
+            break;
+        case '<':
+            ctx.beginPath();
+            ctx.moveTo(x,y);
+            cuadrilatero(ctx, grosor, 1, 1, x + grosor, y - (3 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (4 * grosor));
+
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (5 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (4 * grosor), y - (6 * grosor));
+
+            cuadrilatero(ctx, grosor, 1, 1, x + (2 * grosor), y - (2 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (3 * grosor), y - (1 * grosor));
+            cuadrilatero(ctx, grosor, 1, 1, x + (4 * grosor), y);
+            ctx.fill();
+            break;
         case ',':
             ctx.beginPath();
             ctx.moveTo(x, y);
