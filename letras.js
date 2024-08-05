@@ -10,7 +10,8 @@ function letra(letra, ctx, grosor, x, y) {
     switch (letra) {
         case '3':
             ctx.beginPath();
-            x-= (3*grosor)
+            x-= (3*grosor);
+            y-=.25*grosor;
             ctx.moveTo(x, y);
             cuadrilatero(ctx, grosor, 2, 1, x+(4*grosor), y-(.5*grosor));
             cuadrilatero(ctx, grosor, 2, 1, x+(4*grosor), y-(4*grosor));
